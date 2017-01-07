@@ -67,6 +67,8 @@ describe("Determine the sequence of an array of numbers: ", function() {
     });
 
 
+
+
   });
 
   describe("Case for neither arithmetic nor geometric sequence", function() {
@@ -81,6 +83,10 @@ describe("Determine the sequence of an array of numbers: ", function() {
 
     it("should return -1 for [1, 8, 27, 64, 125]", function() {
       expect(aritGeo([1, 8, 27, 64, 125])).toEqual(-1);
+    });
+
+    it("should return -1 for [1, 3, 5, 7, 10]", function() {
+      expect(aritGeo([1, 3, 5, 7, 10])).toEqual(-1);
     });
       
   });

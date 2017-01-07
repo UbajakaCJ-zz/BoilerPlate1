@@ -93,6 +93,11 @@ describe("Determine the sequence of an array of numbers: ", function() {
       expect(aritGeo([3, 6, 9, 12, 15, 19])).toEqual(-2);
     });
 
+    it("should return -1 for [1, 2, 4, 8, 16, 17]", function() {
+      expect(aritGeo([1, 2, 4, 8, 16, 17])).toEqual(-3);
+    });
+
+
   });
 });
 

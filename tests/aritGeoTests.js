@@ -34,6 +34,10 @@ describe("Determine the sequence of an array of numbers: ", function() {
       expect(aritGeo([3, 6, 9, 12, 15, 18])).toEqual('Arithmetic');
     });
 
+    it("should return `Arithmetic` for [4, 8, 12, 16, 20, 24]", function() {
+      expect(aritGeo([4, 8, 12, 16, 20, 24])).toEqual('Arithmetic');
+    });
+
   });
 
   describe("Case for a geometric sequence", function() {

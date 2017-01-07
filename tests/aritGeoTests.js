@@ -62,6 +62,11 @@ describe("Determine the sequence of an array of numbers: ", function() {
       expect(aritGeo([2, 6, 18, 54])).toEqual('Arithmetic');
     });
 
+    it("should return `Geometric` for [3, 6, 12, 24, 48]", function() {
+      expect(aritGeo([3, 6, 12, 24, 48])).toEqual('Arithmetic');
+    });
+
+
   });
 
   describe("Case for neither arithmetic nor geometric sequence", function() {

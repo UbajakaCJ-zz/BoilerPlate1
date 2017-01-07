@@ -42,6 +42,10 @@ describe('Min-Max Numbers in a List: ', function () {
       expect(findMinMax([4, 4, 4, 4])).toEqual([4]);
     });
 
+    it('should return [5] for [5, 5, 5, 5, 5]', function () {
+      expect(findMinMax([5, 5, 5, 5, 5])).toEqual([6]);
+    });
+
   });
 
 });

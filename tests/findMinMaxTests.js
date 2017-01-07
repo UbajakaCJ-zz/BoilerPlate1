@@ -26,6 +26,10 @@ describe('Min-Max Numbers in a List: ', function () {
       expect(findMinMax([8,15,16,20,21])).toEqual([8,21]);
     });
 
+    it('should return [4, 9] for [4, 8, 5, 7, 9]', function () {
+      expect(findMinMax([4, 8, 5, 7, 9])).toEqual([4, 8]);
+    });
+
   });
 
   describe('Return the number in the list in a new list follows `[min]` when the number is the min and max number in that list', function () {

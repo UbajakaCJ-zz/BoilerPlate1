@@ -28,6 +28,10 @@ describe("Fizz Buzz tests ", function() {
     expect(fizzBuzz(50)).toBe('Buzz');
   });
 
+  it("should return `Buzz` for 55", function() {
+    expect(fizzBuzz(55)).toBe('Buzz');
+  });
+
   it("should return `FizzBuzz` for 90", function() {
     expect(fizzBuzz(90)).toBe('FizzBuzz');
   });

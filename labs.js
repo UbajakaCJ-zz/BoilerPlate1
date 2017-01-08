@@ -55,19 +55,22 @@ module.exports = {
 
     aritGeo: function (arr) {
         // TODO
-        var minRatio = 1/0,
-        maxRatio = -1/0,
-        minDiff  = 1/0,
-        maxDiff  = -1/0,
-        epsilon  = 0.000001,
+        var minRatio = 1/0, // Minimum ratio
+        maxRatio = -1/0, // Maximum ratio
+        minDiff  = 1/0, // Minimum difference
+        maxDiff  = -1/0, // Maximum difference
+        epsilon  = 0.000001, // Configured Epsilon for comparing relative differences
         i,
-        ratio,
-        diff;
+        ratio, // The ratio for Geometric Progression
+        diff;  // The difference for Arithmetic Progression
 
+
+    // To return zero if array is empty
     if (arr.length == 0) {
         return 0;
     }
 
+    // To find the ratio or difference of the array
     for (i = 1; i < arr.length; ++i) {
         diff  = arr[i] - arr[i - 1];
         ratio = arr[i] / arr[i - 1];
@@ -77,14 +80,17 @@ module.exports = {
         maxRatio = Math.max(ratio, maxRatio);
     }
 
+    // To return 'Arithmetic' if the array is arithmetic
     if (Math.abs(minDiff - maxDiff) < epsilon) {
         return "Arithmetic";
     }
 
+    // To return 'Geometric' if the array is geometric
     if (Math.abs(minRatio - maxRatio) < epsilon) {
         return "Geometric";
     }
 
+    // To return -1 if the array is neither Arithmetic nor Geometric
     return -1;
 	// return 0;
     }

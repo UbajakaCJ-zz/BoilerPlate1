@@ -31,23 +31,26 @@ module.exports = {
     },
 
     fizzBuzz: function (num) {
+        var value = "";
+
+        // To check if num is divisible by 3
         if (num % 3 == 0) {
-                if (num % 5 == 0) {
-                    return 'FizzBuzz';
-                } else {
-                    return 'Fizz';
-                }
-            } else if (num % 5 == 0) {
-                if (num % 3 == 0) {
-                    return 'FizzBuzz';
-                } else {
-                    return 'Buzz';
-                }
-            } else {
-                return num;
-            }
+            value += 'Fizz';
+        }
+
+        //To check if num is divisible by 5
+        if (num % 5 == 0) {
+            value += 'Buzz';
+        }
+
+        //To check if not divisible by either 3 or 5
+        if (value == "") {
+            return num;
+        } else {
+            return value;
+        }
         // TODO
-	return 'Fizz';
+	// return '';
     },
 
     aritGeo: function (arr) {

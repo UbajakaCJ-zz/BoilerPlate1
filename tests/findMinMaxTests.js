@@ -27,11 +27,11 @@ describe('Min-Max Numbers in a List: ', function () {
     });
 
     it('should return [4, 9] for [4, 8, 5, 7, 9]', function () {
-      expect(findMinMax([4, 8, 5, 7, 9])).toEqual([4, 8]);
+      expect(findMinMax([4, 8, 5, 7, 9])).toEqual([4, 9]);
     });
 
     it('should return [10, 55] for [44, 55, 32, 10, 15]', function () {
-      expect(findMinMax([44, 55, 32, 10, 15])).toEqual([32, 55]);
+      expect(findMinMax([44, 55, 32, 10, 15])).toEqual([10, 55]);
     });
 
   });
@@ -43,7 +43,7 @@ describe('Min-Max Numbers in a List: ', function () {
     });
 
     it('should return [5] for [5, 5, 5, 5, 5]', function () {
-      expect(findMinMax([5, 5, 5, 5, 5])).toEqual([6]);
+      expect(findMinMax([5, 5, 5, 5, 5])).toEqual([5]);
     });
 
   });

@@ -59,11 +59,11 @@ describe("Determine the sequence of an array of numbers: ", function() {
     });
 
     it("should return `Geometric` for [2, 6, 18, 54]", function() {
-      expect(aritGeo([2, 6, 18, 54])).toEqual('Arithmetic');
+      expect(aritGeo([2, 6, 18, 54])).toEqual('Geometric');
     });
 
     it("should return `Geometric` for [3, 6, 12, 24, 48]", function() {
-      expect(aritGeo([3, 6, 12, 24, 48])).toEqual('Arithmetic');
+      expect(aritGeo([3, 6, 12, 24, 48])).toEqual('Geometric');
     });
 
 
@@ -90,11 +90,11 @@ describe("Determine the sequence of an array of numbers: ", function() {
     });
 
     it("should return -1 for [3, 6, 9, 12, 15, 19]", function() {
-      expect(aritGeo([3, 6, 9, 12, 15, 19])).toEqual(-2);
+      expect(aritGeo([3, 6, 9, 12, 15, 19])).toEqual(-1);
     });
 
     it("should return -1 for [1, 2, 4, 8, 16, 17]", function() {
-      expect(aritGeo([1, 2, 4, 8, 16, 17])).toEqual(-3);
+      expect(aritGeo([1, 2, 4, 8, 16, 17])).toEqual(-1);
     });
 
 

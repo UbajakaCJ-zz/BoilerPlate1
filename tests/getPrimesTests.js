@@ -20,4 +20,8 @@ describe("Get Primes tests ", function() {
     expect(getPrimes(12)).toEqual([2, 3, 5, 7, 11]);
   });
 
+  it("should return [2, 3, 5, 7, 11, 13] for 15", function() {
+    expect(getPrimes(15)).toEqual([2, 3, 5, 7, 11, 13]);
+  });
+
 });

@@ -32,5 +32,9 @@ describe("Get Primes tests ", function() {
     expect(getPrimes(20)).toEqual([2, 3, 5, 7, 11, 13, 17, 19]);
   });
 
+  it("should return [2, 3, 5, 7, 11, 13, 17, 19, 23] for 24", function() {
+    expect(getPrimes(24)).toEqual([2, 3, 5, 7, 11, 13, 17, 19, 23]);
+  });
+
 });
 

@@ -96,7 +96,7 @@ module.exports = {
     },
 
     dataTypes: function(datum){
-        if(typeof datum == 'string'){
+        if(typeof datum == 'string'){ // To return the length of string, if datum is string
             return datum.length;
         } else if ((datum === null) || (datum === undefined )){
             return 'no value';
@@ -124,10 +124,8 @@ module.exports = {
         } 
 
         else if (typeof datum == 'function') {
-        
             datum(true);
             return 'called callback';
-
         }
     },
 
@@ -155,9 +153,28 @@ module.exports = {
 
             }
         }
-
         return primeNumbers;
+    }, 
+
+    Car: function(name, model){
+        if(name==null || name==undefined){
+        this.name = "General" ; 
+    } 
+    else{ 
+            this.name = name;
+    } 
+    if(model==null || model==undefined){
+        this.model = "GM"; 
+    } 
+    else{
+        this.model = model; 
+    } 
+    if(name == 'Porshe' || name == 'Koenigsegg'){
+        this.numOfDoors = 2; 
+    } 
+    else{
+        this.numOfDoors = 4; 
+    } 
 
     }
-
 }

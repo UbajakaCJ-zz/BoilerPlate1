@@ -93,5 +93,71 @@ module.exports = {
     // To return -1 if the array is neither Arithmetic nor Geometric
     return -1;
 	// return 0;
+    },
+
+    dataTypes: function(datum){
+        if(typeof datum == 'string'){
+            return datum.length;
+        } else if ((datum === null) || (datum === undefined )){
+            return 'no value';
+        } else if (typeof datum === 'boolean'){
+            return datum;
+        } else if (typeof datum == 'number'){
+            if(datum < 100){
+                return 'less than 100';
+            } else if (datum > 100){
+                return 'more than 100';
+            } else {
+                return 'equal to 100';
+            } 
+        } else if (Array.isArray(datum)){
+            if(datum.length > 2){
+                if(datum[2] === undefined || datum[2] === null){
+                    return 'no value';
+                } else {
+                    return datum[2];
+                }
+            
+            } else {
+                return undefined;
+            }
+        } 
+
+        else if (typeof datum == 'function') {
+        
+            datum(true);
+            return 'called callback';
+
+        }
+    },
+
+    getPrimes: function(value){
+
+        var primes = [];
+        var primeNumbers = [];
+
+        for (var i = 2; i <= value + 1; i++) {
+            primes[i] = true;
+        }
+
+        var limit = Math.sqrt(value + 1);
+        for (var i = 2; i < limit; i++) {
+            if (primes[i]) {
+                for (var j = i*i; j < value + 1; j += i) {
+                    primes[j] = false;
+                }
+            }
+        }
+
+        for (var i = 2; i < value + 1; i++) {
+            if (primes[i]) {
+                primeNumbers.push(i);
+
+            }
+        }
+
+        return primeNumbers;
+
     }
+
 }

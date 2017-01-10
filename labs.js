@@ -156,25 +156,44 @@ module.exports = {
         return primeNumbers;
     }, 
 
-    Car: function(name, model){
-        if(name==null || name==undefined){
-        this.name = "General" ; 
-    } 
-    else{ 
-            this.name = name;
-    } 
-    if(model==null || model==undefined){
-        this.model = "GM"; 
-    } 
-    else{
-        this.model = model; 
-    } 
-    if(name == 'Porshe' || name == 'Koenigsegg'){
-        this.numOfDoors = 2; 
-    } 
-    else{
-        this.numOfDoors = 4; 
-    } 
+    reverseString: function(stri){
+        if (stri == '') { // To return null for empty string
+            return null
+        } else {
 
+            var newString = ""; // For the new string
+
+            for (var i = stri.length - 1; i >= 0; i--) {
+            newString += stri[i];
+            }
+
+            if (newString == stri) { // For palindromes
+                return true;
+            }  else {
+                return newString;
+            }
+        }
     }
+
+    // Car: function(name, model){
+    //     if(name==null || name==undefined){
+    //     this.name = "General" ; 
+    // } 
+    // else{ 
+    //     this.name = name;
+    // } 
+    // if(model==null || model==undefined){
+    //     this.model = "GM"; 
+    // } 
+    // else{
+    //     this.model = model; 
+    // } 
+    // if(name == 'Porshe' || name == 'Koenigsegg'){
+    //     this.numOfDoors = 2; 
+    // } 
+    // else{
+    //     this.numOfDoors = 4; 
+    // } 
+
+    // }
 }

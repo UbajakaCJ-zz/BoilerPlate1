@@ -231,7 +231,22 @@ module.exports = {
 
     findMissing: function(arr1, arr2){
 
+        if(arr1.length == 0 && arr2.length == 0){
+            return 0;
+        } else if (arr1 == arr2){
+            return 0;
+        } else {
+
+        for (var i = 0; i < arr1.length; i++) {
+            for (var i = 0; i < arr2.length; i++) {
+                if (arr1[i] != arr2[i]) {
+
+                }
+            }
+        }
+
     }
+}
 
 
 

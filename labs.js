@@ -173,7 +173,43 @@ module.exports = {
                 return newString;
             }
         }
+    },
+
+    toTwenty: function(){
+        var oneToTwenty = [];
+        for (var i = 1; i <= 20; i++) {
+            oneToTwenty.push(i);
+        };
+
+        return oneToTwenty;
+    },
+
+    toForty: function(){
+        var twoToForty = [];
+        for (var i = 2; i <= 40; i += 2) {
+            twoToForty.push(i);
+        };
+
+        return twoToForty;
+    },
+
+    toOneThousand: function(){
+        var tenToOneThousand = [];
+        for (var i = 10; i <= 1000; i += 10) {
+            tenToOneThousand.push(i);
+        };
+
+        return tenToOneThousand;
+    },
+
+    search: function(){
+        
     }
+
+
+
+    // var oneToTwenty = [];
+    // oneToTwenty.toTwenty();
 
     // Car: function(name, model){
     //     if(name==null || name==undefined){

@@ -233,7 +233,7 @@ module.exports = {
 
         if(arr1.length == 0 && arr2.length == 0){
             return 0;
-        } else if (arr1 == arr2){
+        } else if (arr1.value == arr2.value){
             return 0;
         } else {
 

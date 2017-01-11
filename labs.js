@@ -202,14 +202,38 @@ module.exports = {
         return tenToOneThousand;
     },
 
-    search: function(){
-        
+    search: function(searchElement){
+
+        'use strict';
+ 
+        var minIndex = 0;
+        var maxIndex = this.length - 1;
+        var index;
+        var currentElement;
+        var count = 0;
+ 
+        while (minIndex <= maxIndex) {
+            index = (minIndex + maxIndex) / 2 | 0;
+            currentElement = this[index];
+ 
+            if (currentElement < searchElement) {
+                minIndex = index + 1;
+            } else if (currentElement > searchElement) {
+                maxIndex = index - 1;
+            } else {
+            return {count, index};
+            }
+        }
+        count += 1;
+ 
+    return -1;  
+    }, 
+
+    findMissing: function(arr1, arr2){
+
     }
 
 
-
-    // var oneToTwenty = [];
-    // oneToTwenty.toTwenty();
 
     // Car: function(name, model){
     //     if(name==null || name==undefined){

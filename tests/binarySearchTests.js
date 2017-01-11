@@ -5,6 +5,7 @@ var labs = require('../labs.js');
 Array.prototype.toTwenty = labs.toTwenty;
 Array.prototype.toForty = labs.toForty;
 Array.prototype.toOneThousand = labs.toOneThousand;
+Array.prototype.search = labs.search;
 
 describe('Binary Search to traverse an ordered list, effectively', function() {
   describe('Populate the arrays with valid content', function() {

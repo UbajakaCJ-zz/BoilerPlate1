@@ -237,16 +237,60 @@ module.exports = {
             return 0;
         } else {
 
-        for (var i = 0; i < arr1.length; i++) {
-            for (var i = 0; i < arr2.length; i++) {
-                if (arr1[i] != arr2[i]) {
+            for (var i = 0; i < arr1.length; i++) {
+                for (var i = 0; i < arr2.length; i++) {
+                    if (arr1[i] != arr2[i]) {
 
+                    }
                 }
             }
+
+        }
+    },
+
+    Animals: function(name){
+
+        this.name = name
+        this.breathe = function(){
+            console.log(this.name + " breathes");
         }
 
+
+        // Animals.prototype.breathe = function(){     // Extending the prototype of the Animal class
+        //     console.log(this.name + " breathes");
+        // }
+
+        // Animals.prototype.move = function(){
+        //     console.log(this.name + " moves");
+        // }
+
+        // Animals.prototype.eatFood = function() {
+        //     console.log(this.name + " eats food");
+        // };
+
+    },
+
+    Mammals: function(name){
+        this.name = name;
+        this.feedYoungWithMilk = function(){
+            console.log(this.name + " feeds the young with milk");
+        }
+
+        // Mammals.prototype.feedYoungWithMilk = function(){
+        //     console.log(this. name + " feeds the young with milk");
+        // }
+    },
+
+    Girraffes: function(name){
+        this.name = name;
+        this.eatLeavesFromTrees = function(){
+            console.log(this.name + " eats leaves from trees")
+        }
+
+        // Girraffes.prototype.eatLeavesFromTrees = function(){
+        //     console.log(this.name + " eats leaves");
+        // }
     }
-}
 
 
 

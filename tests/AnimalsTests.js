@@ -27,6 +27,12 @@ describe("Animal Class: Create an animal, make it move", function() {
       expect(snake.name + " breathes").toBe('Snake breathes');
     });
 
+    it("The mammal shoud have four (4) legs except its a man or a monkey", function() {
+      var mnk  = new Mammals('Monkey');
+      expect(mnk.numOfLegs).toBe(2);
+      var dg  = new Mammals('Dog');
+      expect(dg.numOfLegs).toBe(4);
+    });
 });
 
 

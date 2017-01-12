@@ -256,7 +256,6 @@ module.exports = {
             this.name = name;
         }
 
-        
         this.breathe = function(){
             console.log(this.name + " breathes");
         }
@@ -287,6 +286,12 @@ module.exports = {
         this.feedYoungWithMilk = function(){
             console.log(this.name + " feeds the young with milk");
         }
+
+        if(name == 'Man' || name == 'Monkey'){
+            this.numOfLegs = 2; 
+        } else {
+            this.numOfLegs = 4; 
+        } 
 
         // Mammals.prototype.feedYoungWithMilk = function(){
         //     console.log(this. name + " feeds the young with milk");

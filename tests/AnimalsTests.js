@@ -1,6 +1,9 @@
 'use strict';
 
 var labs = require('../labs.js');
+Object.prototype.Animals = labs.Animals;
+Object.prototype.Mammals = labs.Mammals;
+Object.prototype.Girraffes = labs.Girraffes;
 
 
 
@@ -16,14 +19,15 @@ describe("Animal Class: Create an animal, make it move", function() {
     it("name and breathe should be a property of the animal", function() {
       var snake  = new Animals('Snake');
       expect(snake.name).toBe('Snake');
-      expect(snake.breathe).toBe('Snake breathes');
+      expect(snake.name + " breathes").toBe('Snake breathes');
     });
 
 });
 
 
-labs.Mammals.prototype = new labs.Animals();
-labs.Girraffes.prototype = new labs.Mammals();
+// labs.Mammals.prototype = new labs.Animals();
+// labs.Girraffes.prototype = new labs.Mammals();
 
-var snake = new labs.Animals("Sanke");
+// var snake = new labs.Animals("Snake");
+// snake.breathe();
 

@@ -308,28 +308,4 @@ module.exports = {
         //     console.log(this.name + " eats leaves");
         // }
     }
-
-
-
-    // Car: function(name, model){
-    //     if(name==null || name==undefined){
-    //     this.name = "General" ; 
-    // } 
-    // else{ 
-    //     this.name = name;
-    // } 
-    // if(model==null || model==undefined){
-    //     this.model = "GM"; 
-    // } 
-    // else{
-    //     this.model = model; 
-    // } 
-    // if(name == 'Porshe' || name == 'Koenigsegg'){
-    //     this.numOfDoors = 2; 
-    // } 
-    // else{
-    //     this.numOfDoors = 4; 
-    // } 
-
-    // }
 }

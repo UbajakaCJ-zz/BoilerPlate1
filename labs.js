@@ -250,9 +250,21 @@ module.exports = {
 
     Animals: function(name){
 
-        this.name = name
+        if (name == null || name == undefined) {
+            this.name = "Animal";
+        } else{
+            this.name = name;
+        }
+
+        
         this.breathe = function(){
             console.log(this.name + " breathes");
+        }
+
+        var family = 'Animals';     // Private variable
+
+        this.getFamily = function(){
+            return family;
         }
 
 

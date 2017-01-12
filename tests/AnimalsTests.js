@@ -16,6 +16,11 @@ describe("Animal Class: Create an animal, make it move", function() {
       expect(snake instanceof Animals).toBeTruthy();
     });
 
+    it("The animal should be called 'Animal' if no name is passed as a parameter", function() {
+      var anml = new Animals();
+      expect(anml.name).toEqual('Animal');
+    });
+
     it("name and breathe should be a property of the animal", function() {
       var snake  = new Animals('Snake');
       expect(snake.name).toBe('Snake');
